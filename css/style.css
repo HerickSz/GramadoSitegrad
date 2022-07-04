@@ -1,0 +1,261 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+h3 {
+    color: rgb(255, 115, 0);
+    font-style: oblique;
+    font-size: 30px;
+}
+
+nav {
+    border-bottom: 5px solid rgb(250, 164, 93);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 115, 0);
+    margin: none;
+}
+
+nav a {
+    padding-left: 20px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+    color: rgb(250, 164, 93);
+    transition: all 0.3s linear;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcf4e6;
+}
+
+.topo {
+    display: grid;
+    flex-direction: row;
+
+}
+
+header {
+    background-color: #a2e7fc;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/backGramadoedit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 20px;
+    font-weight: bold;
+    background-blend-mode: multiply;
+    border-bottom: 5px solid rgb(255, 115, 0);
+}
+
+.topo h1,
+a {
+    font-style: oblique;
+}
+
+#imagens {
+    margin: 10px;
+    border: 1px solid rgb(243, 124, 27);
+
+}
+
+
+
+.texto {
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.img {
+    max-width: 100vh;
+    border: 5px solid #f0d0a6;
+}
+
+.img:hover {
+    border: 5px solid rgb(255, 115, 0);
+    transition: all 0.1s ease-in;
+}
+
+.botao1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 115, 0);
+    text-decoration: none;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.botao1:hover {
+    border: 2px solid rgb(255, 115, 0);
+    background-color: #1414146b;
+    transition: all 0.5s ease-in;
+    resize: none;
+}
+
+.botao2 {
+    border: 2px solid rgb(253, 226, 168);
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 115, 0);
+    text-decoration: none;
+    border-style: dashed;
+}
+
+.botao2:hover {
+    border: 2px solid rgb(255, 115, 0);
+    transition: all 0.5s ease-in;
+    resize: none;
+    animation: botao2 1s;
+}
+
+.botao3 {
+    border: 3px solid rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.botao3:hover {
+    border: 7px solid transparent;
+    transition: all 0.1s ease-in;
+    resize: none;
+    text-decoration: underline;
+}
+
+.hospede p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.hospede {
+    padding: 15px;
+}
+
+
+.duvida1 p {
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 15px;
+    color: #e9eff8;
+    margin: 0px;
+}
+
+.grupo {
+    margin-top: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 115, 0);
+}
+
+.grupo p {
+    font-size: 15px;
+    color: #FFFFFF;
+
+}
+
+.iframe {
+    padding-bottom: 10px;
+}
+
+iframe {
+    width: 80vh;
+    height: 40vh;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+footer h4 {
+    color: #ffffff;
+}
+
+footer img {
+    padding-right: 10px;
+}
+
+footer {
+    border-top: 5px solid rgb(243, 190, 110);
+    font-size: 20px;
+    background-image: url(../img/footerimg.jpg);
+    background-color: rgb(250, 219, 118);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+@keyframes botao2 {
+    from {
+        border: 2px solid rgb(253, 226, 168);
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        border-style: dashed;
+        border-color: rgb(255, 230, 0);
+        resize: none;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        background-position: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        text-align: justify;
+        font-size: 15px;
+        letter-spacing: -0.30pt;
+        word-spacing: -0.30pt;
+        font-weight: 400;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .img {
+        justify-content: space-evenly;
+        max-width: 44vh;
+        align-items: center;
+    }
+
+    iframe {
+        width: 45vh;
+        height: 25vh;
+    }
+}
